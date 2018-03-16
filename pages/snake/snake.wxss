@@ -1,0 +1,90 @@
+.control{
+  position: fixed;
+  top:0;
+  left: 0;
+}
+.score {
+    display: flex;
+}
+
+.title{
+    flex:1;
+    height: 150rpx;
+    line-height: 150rpx;
+    background-image: linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%);
+    margin: 40rpx 20rpx 40rpx 40rpx;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 8rpx;
+}
+
+
+.scoredetail{
+    flex:1;
+    height: 150rpx;
+     background-image: linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%);
+    margin: 40rpx 20rpx;
+    text-align: center;
+    border-radius: 8rpx;
+    color: #333;
+}
+
+.scoredetail:last-child{
+   background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
+}
+
+.scoredesc{
+    font-size: 0.8rem;
+    line-height: 70rpx;
+}
+.scorenumber{
+    font-size: 1.5rem;
+    line-height: 70rpx;
+}
+.ground{
+    width: 660rpx;
+    height:840rpx;
+    margin:0 auto;
+    
+    
+}
+.block{
+    width:30rpx;
+    height:30rpx;
+    float: left;
+    background: #1E90FF;
+}
+.rows{
+    width: 660rpx;
+    height:30rpx;
+}
+.control{
+    width: 100%;
+    height: 100%;
+}
+.block_1{
+    background:#FFFF00;
+}
+
+.block_2{
+    background:	#FFF;
+}
+.info{
+  font-size: .6rem;
+  color: #999;
+  padding: 20rpx 50rpx;
+  line-height: 35rpx;
+}
+#myAudio{
+  display:none; 
+}
+.modal-text{
+  text-align: center;
+  font-size: .8rem;
+  line-height: 2rem;
+}
+.call{
+  font-size: 1.1rem;
+  font-weight: bold;
+}

@@ -1,0 +1,32 @@
+<!--snake.wxml-->
+<view class="control" bindtouchstart="tapStart" bindtouchmove="tapMove" bindtouchend="tapEnd" disable-scroll="true">
+<audio src="{{src}}" id="myAudio" loop></audio>
+
+<view class="score">
+    <!-- <view class="title">snake</view> -->
+    <view class="scoredetail">
+        <view class="scoredesc">当前得分</view>
+        <view class="scorenumber">{{score}}</view>
+    </view>
+    <view class="scoredetail">
+        <view class="scoredesc">历史最高分</view>
+        <view class="scorenumber">{{maxscore}}</view>
+    </view>
+</view>
+<view class="ground">
+    <view wx:for="{{ground}}"  class="rows" wx:for-item="cols">
+        <view wx:for="{{cols}}" class="block block_{{item}}" >
+
+        </view>
+    </view>
+</view>
+<view class="info">
+  <view class="info-text">说明: 手指滑动屏幕即可开始游戏，通过滑动方向来控制贪吃蛇走向，一起来开车吧。</view>
+</view>
+<modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+  <view class="modal-text"> 
+      <view class="call">{{call}}</view> 
+      <view class="scorenow">{{resultText}}</view>
+  </view>
+</modal>
+</view>
